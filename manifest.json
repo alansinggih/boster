@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Boster-find",
+  "version": "0.99.2",
+  "description": "Sehubung Segala kerjaan menggunakan internet, dengan datangnya pengaya ini akan mempercepat segalanya",
+  "homepage_url": "https://github.com/usermh99/boster",
+  "icons": {
+    "48": "icons/bs48.png"
+  },
+  "content_scripts": [
+    { "matches": ["*://*/*"],
+      "js": [
+	  "js/jquery-3.3.1.js",
+	  "Boster-find.js"]
+    }
+  ],
+    "browser_action": {
+    "default_icon": "icons/bs128.png",
+    "default_title": "Addon Aktif"}
+	
+	 
+}
